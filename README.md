@@ -1,5 +1,9 @@
-# Payment methods PoC
-Merchant checkout flow example
+# Payments PoC
+A little payment app
+
+Payment Cars | PayPal
+------------ | -------------
+![payment-card-frame](https://user-images.githubusercontent.com/1580169/121419135-a3998c00-c939-11eb-80f1-b66191375b36.gif) | ![paypal-frame](https://user-images.githubusercontent.com/1580169/121419169-ad22f400-c939-11eb-9357-005129e292d4.gif)
 
 ### Install dependencies
 ```bash
