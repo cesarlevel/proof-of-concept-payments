@@ -5,8 +5,8 @@
   "author": "Cesar Level",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.html src/paypal.html src/payment-card.html src/redirect.html",
-    "build": "parcel src/index.html src/paypal.html src/payment-card.html src/redirect.html"
+    "dev": "parcel src/index.html src/payment-instrument-flows/paypal/paypal.html src/payment-instrument-flows/payment-card/payment-card.html src/redirect.html",
+    "build": "parcel src/index.html src/payment-instrument-flows/paypal/paypal.html src/payment-instrument-flows/payment-card/payment-card.html src/redirect.html"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
