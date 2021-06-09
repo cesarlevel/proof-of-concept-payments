@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>PayPal Integration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://framepay.rebilly.com/rebilly.js"></script>
+    <link href="https://framepay.rebilly.com/rebilly.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body>
+<div class="container">
+    <div class="loading">
+        <div class="loader"></div>
+    </div>
+    <form action="">
+        <input type="text" data-rebilly="firstName" value="Cesar" hidden>
+        <input type="text" data-rebilly="lastName" value="Level" hidden>
+        <input type="text" data-rebilly="email" value="cesarlevel+paypal@gmail.com" hidden>
+        <button class="paypal" id="paypal"><img src="" alt="" width="auto"></button>
+        <button class="payment-card">Payment Card</button>
+    </form>
+    <div id="zoid-component"></div>
+</div>
+</body>
+</html>

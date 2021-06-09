@@ -1,0 +1,22 @@
+{
+  "name": "paypal-integration",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Cesar Level",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html src/paypal.html src/payment-card.html src/redirect.html",
+    "build": "parcel src/index.html src/paypal.html src/payment-card.html src/redirect.html"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "rebilly-js-sdk": "^35.0.0",
+    "zoid": "^9.0.65"
+  },
+  "browserslist": [
+    "since 2017-06"
+  ],
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
