@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Payment card
     function paymentCardFlow(e) {
         e.preventDefault();
-        zoidComponentUrl = 'http://localhost:1234/payment-card.html';
+        zoidComponentUrl = 'http://localhost:1234/payment-instrument-flows/payment-card/payment-card.html';
         zoidComponent = zoidComponentInit({
             publishableKey: process.env.API_KEY,
             organizationId: process.env.ORGANIZATION_ID,
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         form.addEventListener('submit', (e) => {
             loading.classList.toggle('active');
-            zoidComponentUrl = 'http://localhost:1234/paypal.html';
+            zoidComponentUrl = 'http://localhost:1234/payment-instrument-flows/paypal/paypal.html';
             e.preventDefault();
             e.stopPropagation();
 

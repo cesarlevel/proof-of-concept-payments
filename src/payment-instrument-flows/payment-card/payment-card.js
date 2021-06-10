@@ -2,7 +2,7 @@ import zoid from 'zoid';
 
 const zoidComponentInit = zoid.create({
     tag: 'zoid-test',
-    url: 'http://localhost:1234/payment-card.html'
+    url: 'http://localhost:1234/payment-instrument-flows/payment-card/payment-card.html'
 });
 
 (function initializeFramepay() {
