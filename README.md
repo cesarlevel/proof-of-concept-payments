@@ -14,6 +14,10 @@ yarn install
 ```bash
 yarn serve
 ```
+### Browser
+```bash
+http://localhost:1234/index.html
+```
 
 ### Configuration
 The application uses [environment variables](https://cli.vuejs.org/guide/mode-and-env.html#modes) on the server component
