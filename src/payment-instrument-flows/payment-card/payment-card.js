@@ -5,6 +5,11 @@ const zoidComponentInit = zoid.create({
     url: 'http://localhost:1234/payment-instrument-flows/payment-card/payment-card.html'
 });
 
+const cssStyle = document.createElement('style');
+
+document.head.append(cssStyle);
+cssStyle.innerHTML = window.xprops.css;
+
 (function initializeFramepay() {
     Rebilly.initialize({
         publishableKey: window.xprops.publishableKey,

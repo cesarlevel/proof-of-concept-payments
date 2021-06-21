@@ -3,6 +3,71 @@ import dotenv from 'dotenv';
 import zoid from 'zoid';
 import paypalLogo from './assets/paypal.svg';
 
+const myStyle = `
+    * {
+        font-family: Roboto, Open Sans, Segoe UI, sans-serif;
+    }
+    
+    body {
+        background-color: #EDF3FE;
+        padding: 2em 2em;
+        font-family: Roboto;
+    }
+    
+    
+    fieldset {
+        border: none;
+        margin: 0 0 40px 0;
+        padding: 0;
+    }
+    
+    button {
+        position: relative;
+        border: none;
+        padding: 8px 16px;
+        color: #FFF;
+        margin: 20px auto;
+        border-radius: 8px;
+        background: #1abc9c;
+        font-size: 18px;
+        text-align: center;
+        font-style: normal;
+        width: 100%;
+        box-shadow: 0 10px 30px 0 rgba(26, 188, 156, 0.5);
+        -moz-box-shadow: 0 10px 30px 0 rgba(26, 188, 156, 0.5);
+        -webkit-box-shadow: 0 10px 30px 0 rgba(26, 188, 156, 0.5);
+        -o-box-shadow: 0 10px 30px 0 rgba(26, 188, 156, 0.5);
+        -ms-box-shadow: 0 10px 30px 0 rgba(26, 188, 156, 0.5);
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+    
+    button:hover {
+        background: #000000;
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+        -o-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+        -ms-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    
+    
+    .rebilly-framepay.rebilly-framepay-valid {
+        border-color: pink;
+    }
+    
+    .rebilly-framepay.rebilly-framepay-focus {
+        /*border-color: rgba(0, 221, 26, .3);*/
+    }
+    
+    .rebilly-framepay.rebilly-framepay-invalid {
+        border-color: purple;
+    }
+`;
+
 document.addEventListener('DOMContentLoaded', function() {
     dotenv.config({path: '../.env'});
     const api = RebillyStorefrontAPI({
@@ -93,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
         zoidComponent = zoidComponentInit({
             publishableKey: process.env.API_KEY,
             organizationId: process.env.ORGANIZATION_ID,
+            css: myStyle,
         });
         zoidComponent.render(zoidElement);
     }
